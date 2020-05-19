@@ -1,0 +1,15 @@
+{
+    "require": {
+        "phpunit/phpunit": "^9.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bookstore\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bookstore\\Test\\": "tests/"
+        }
+    }
+}
