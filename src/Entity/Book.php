@@ -2,43 +2,17 @@
 
 declare(strict_types = 1);
 
-namespace Bookstore\Domain\Entities;
+namespace Bookstore\Entity;
 
 use Exception;
 
 class Book
 {
-    private $id;
-
     private $title;
 
     private $resume;
 
     private $author;
-
-    /**
-     * Get the value of id
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Set the value of id
-     *
-     * @return  self
-     */
-    public function setId($id)
-    {
-        if (!is_numeric($id)) {
-            throw new Exception("The value needs to be numeric");
-        }
-
-        $this->id = $id;
-
-        return $this;
-    }
 
     /**
      * Get the value of title
